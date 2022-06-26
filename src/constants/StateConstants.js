@@ -1,0 +1,5 @@
+export const STATE_CONSTANTS = {
+    GET_NAME: "GET_NAME",
+    GET_COLOUR: "GET_COLOUR",
+    CONFUSION: "CONFUSION"
+}

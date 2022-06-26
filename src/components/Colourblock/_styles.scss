@@ -1,0 +1,30 @@
+.application {
+    .colour-block {
+        width: 200px;
+        height: 200px;
+
+        &.blue {
+            background-color: indigo;
+        }
+
+        &.red {
+            background-color: crimson;
+        }
+
+        &.white {
+            background-color: gainsboro;
+        }
+
+        &.yellow {
+            background-color: darkgoldenrod;
+        }
+
+        &.green {
+            background-color: olivedrab;
+        }
+
+        &.black {
+            background-color: transparent;
+        }
+    }
+}

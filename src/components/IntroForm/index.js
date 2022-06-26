@@ -25,6 +25,8 @@ class IntroForm extends React.Component {
     isNameValid = () => {
         if(this.state.name === null || this.state.name === "") {
             this.props.updateConversation(LOGIN_CONSTANTS.NO_NAME_MESSAGE);
+        } else if(/\s/.test(this.state.name)) {
+            this.props.updateConversation(LOGIN_CONSTANTS.NO_SPACES_MESSAGE);
         } else if(/\W/.test(this.state.name)) {
             this.props.updateConversation(LOGIN_CONSTANTS.SPECIAL_CHARACTERS_MESSAGE);
         } else if(/^\d+$/.test(this.state.name)) {
